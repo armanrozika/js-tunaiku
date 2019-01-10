@@ -7,6 +7,8 @@ Berikut jawaban dari tes yang diberikan:
 for(var i=0; i < 4; i++) {
     setTimeout(() => console.log(i), 0);
 }
+
+
 //why the code above log 4 (number) four times?
 /* 
 answer: 
@@ -24,6 +26,8 @@ for(let i=0; i < 4; i++) {
 
 
 //no.2
+
+
 function Person(name, age) {
     this.name = name;
     this.age = age;
@@ -42,6 +46,8 @@ console.log(x)
 
 
 //no.3
+
+
 var Person = function(fullName) {
     this.fullName = fullName;
     this.walking = () => {
@@ -56,7 +62,10 @@ x.running()
 
 
 //no.4
+
+
 var a = [1,2,3,4]+[5,6,7,8];
+
 var b = [1,2,3,4]-[5,6,7,8];
 
 //variable A work because javascript converts array into string if there's a (+) operator there, hence you get the value of 1,2,3,45,6,7,8(string). But, variable b outputted NaN because that's what you get if you try to subtract a string from a string. The term for the converted array to string is called Coercing.
